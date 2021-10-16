@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, g
+import sqlite3
 
 app = Flask(__name__)
 
@@ -6,3 +7,5 @@ app = Flask(__name__)
 @app.route('/jobs')
 def jobs():
     return render_template('index.html')
+
+PATH = path('db/jobs.sqlite')
