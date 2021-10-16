@@ -8,4 +8,4 @@ app = Flask(__name__)
 def jobs():
     return render_template('index.html')
 
-PATH = path('db/jobs.sqlite')
+PATH = 'db/jobs.sqlite'
